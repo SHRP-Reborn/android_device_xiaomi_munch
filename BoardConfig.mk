@@ -97,3 +97,32 @@ TW_CUSTOM_BATTERY_POS := "800"
 # TWRP_EVENT_LOGGING := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# SHRP Flags
+# Device codename
+SHRP_DEVICE_CODE := munch
+# Path of your SHRP device tree
+SHRP_PATH := device/xiaomi/$(SHRP_DEVICE_CODE)
+# Maintainer name
+SHRP_MAINTAINER := "Himanshu Raj (@hraj9258)"
+# Recovery Type (for "About" section only)
+# Default (if not set): N/A
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := V-A/B
+# Your device's recovery path, dont use blindly
+#SHRP_REC := /dev/block/bootdevice/by-name/recovery
+# internal storage path
+SHRP_INTERNAL := /sdcard
+# USB OTG path
+SHRP_OTG := /usb_otg
+# Flashlight: (0 = disable, 1 = enable)
+SHRP_FLASH := 1
+# SHRP Dark mode, use this flag to have dark theme set by default
+SHRP_DARK := true
+# Addon - Clear Fingerprint (remove fingerprint lock from system)
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+#SHRP_OFFICIAL := true
+SHRP_AB := true
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_OFFICIAL := true
